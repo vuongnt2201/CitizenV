@@ -1,0 +1,311 @@
+<div class="panel-heading"><strong>New Application</strong></div>
+	
+	<fieldset class="well">
+		<strong>TYPE OF APPLICATION:<br></strong>
+		<p><input type="radio"  name="apptype" value="new">New</p>
+		<p><input type="radio" name="apptype" value="replacement">Replacement of lost/old/unidentified or non-LB issued/correction of entry on the old ID<br></p>
+	</fieldset>
+	<h3>&nbsp; Personal Information</h3>
+	
+	<label>&nbsp;&nbsp; Name:</label>
+	<p id="errtxt1" class="text-danger bg-danger hidden">This field is required.</p>
+	<div class="form-inline name">
+	
+		<div class="input-group">
+			<!--<span class="input-group-addon"><strong>Surname</strong></span>-->
+			<input class="form-control" type="text" name="surname" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. "  placeholder="Last Name" >
+		</div>
+		<div class="input-group">
+			<!--<span class="input-group-addon"><strong>Given Name</strong></span>-->
+			 <input class="form-control" type="text" name="givenname" data-validation="required" 
+		 data-validation-length="min1" data-validation-error-msg="This field is required. " placeholder="First Name" >
+		</div>
+		<div class="input-group">
+			<!--<span class="input-group-addon"><strong>Middle Name</strong></span>-->
+			 <input class="form-control" type="text" name="middlename"  data-validation="required" 
+		 data-validation-length="min1" data-validation-error-msg="This field is required. " placeholder="Middle Name" >
+		</div>
+	
+	</div>
+
+	<label>&nbsp;&nbsp; Address:</label>
+	<p id="errtxt2" class="text-danger bg-danger hidden">This field is required.</p>
+	<div  class="form-inline name">
+		
+		<div class="input-group">
+			<!--<span class="input-group-addon"><strong>Surname</strong></span>-->
+			<input class="form-control" type="text" name="streetname" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " placeholder="Street Name" >
+		</div>
+		<div class="input-group">
+			<!--<span class="input-group-addon"><strong>Given Name</strong></span>-->
+			 <input class="form-control" type="text" name="barangay" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. "  placeholder="Barangay" >
+		</div>
+		<div class="input-group">
+			<!--<span class="input-group-addon"><strong>Middle Name</strong></span>-->
+			 <input class="form-control" type="text" name="city"  data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " placeholder="City" >
+		</div>
+	
+	</div>
+
+	</hr>
+
+	<p id="errtxt3" class="text-danger bg-danger hidden">This field is required.</p>
+	<div class="form-inline">
+		
+		<div class="input-default input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Telephone Number</strong></span>
+			  <input class="form-control" type="number"  id="telnum" name="telnum">
+		</div>
+		
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Years of Residency</strong></span>
+			  <input class="form-control" type="number" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " name="yearsOfRes">
+		</div>
+		
+	
+	</div>
+
+	<div class="form-inline">
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Date of Birth</strong></span>
+			  <input class="form-control" type="date" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. "  name="birthday">
+		</div>
+		
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Place of Birth</strong></span>
+			  <input class="form-control" type="text" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " name="birthplace">
+		</div>
+		
+	
+	</div>
+	
+	<div class="form-inline">
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Gender</strong></span>
+			 <input  type="radio" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " name="gender" value="male">Male
+			<input type="radio"  name="gender" value="female">Female<br>
+		</div>
+
+	<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Civil Status</strong></span>
+				<select data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " name="civilstas" class="form-control" required="">
+				<option value="Single">Single</option>
+				<option value="Married">Married</option>
+				<option value="Widowed">Widowed</option>
+				<option value="Divorced">Divorced</option>
+				</select>
+			</div>
+		
+		
+	
+	</div>
+	
+	<hr/>
+	<h3>&nbsp; Spouse Information</h3>
+
+	<div class="form-inline">
+		
+		
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Name of Spouse</strong></span>
+			  <input class="form-control" type="text" name="spousename" >
+		</div>
+			
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Age of Spouse</strong></span>
+			  <input class="form-control" type="number" name="spouseage" >
+		</div>
+		
+	
+	</div>
+	
+	
+	<hr/>
+	<h3>&nbsp; Education and Employment</h3>
+
+	<div class="form-inline">
+		
+		
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Educational Attainment</strong></span>
+			 <select class="form-control" name="educattain" required="">
+			<option value="Elementary Undergraduate">Elementary Undergraduate</option>
+			<option value="Elementary Graduate">Elementary Graduate</option>
+			<option value="Highschool Undergraduate">Highschool Undergraduate</option>
+			<option value="Highschool Graduate">Highschool Graduate</option>
+			<option value="College Undergraduate">College Undergraduate</option>
+			<option value="College Graduate">College Graduate</option>
+			<option value="Post-Graduate">Post-Graduate</option>
+		</select><br>
+		</div>
+			
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Are you presently employed?</strong></span>
+			 <input type="radio" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " name="employed" value="1">Yes
+		<input type="radio" name="employed" value="0">No<br>
+		</div>
+		
+	
+	</div>
+	
+	
+	<hr/>
+
+	<h4>&nbsp; Sources of Income</h4>
+
+	<div class="form-inline">
+		
+		
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Position</strong></span>
+			  <input class="form-control" type="text" name="position" >
+		</div>
+			
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Salary Per Month</strong></span>
+			  <input class="form-control" type="number" name="salaryvalue" >
+		</div>
+		
+	
+	</div>
+	
+	<div class="form-inline">
+		
+		
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Employer</strong></span>
+			  <input class="form-control" type="text" name="employer" >
+		</div>
+			
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Address</strong></span>
+			  <input class="form-control" type="number" name="workaddress">
+		</div>
+		
+	
+	</div>
+
+	<div class="form-inline">
+		
+			
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Telephone Number</strong></span>
+			  <input class="form-control" type="number" name="worktelnum">
+		</div>
+		
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Other Sources of income</strong></span>
+			  <input class="form-control" type="text" name="incomesrc" >
+		</div>
+	
+	</div>
+
+	<div class="form-inline">
+		
+			
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Amount </strong></span>
+			  <input class="form-control" type="number" name="incomesrcamt" >
+		</div>
+		
+	
+	</div>
+	
+	<hr/>
+
+	<h3>&nbsp; Philhealth Membership</h3>
+
+	<div class="form-inline">
+		
+			
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Are you a member of PhilHealth? </strong></span>
+			  	<input type="radio" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " name="phmember" value="1">Yes</input>
+				<input type="radio" name="phmember" value="0">No</input><br>
+		</div>
+
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Are you a dependent of a Philhealth member? </strong></span>
+			  	<input type="radio" data-validation="required" 
+		 data-validation-length="1" data-validation-error-msg="This field is required. " name="phdependent" value="1">Yes</input>
+				<input type="radio" name="phdependent" value="0">No </input><br>
+		</div>
+		
+	
+	</div>
+
+	
+	<div class="form-inline">
+		
+			
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Philhealth Number </strong></span>
+			  <input class="form-control" type="number" name="phmemno">
+		</div>
+
+		<div class="input-default  input-group col-lg-5 col-xs-12 col-md-5">
+			<span class="input-group-addon"><strong>Philhealth Dependent Number </strong></span>
+			  <input class="form-control" type="number" name="phspecify" >
+		</div>
+	
+	</div>
+
+	<hr/>
+	
+	</div>
+	<div class="col-xs-12 col-lg-4 col-md-4">
+	</div>
+
+	<div class="col-xs-12 col-lg-12 col-md-12 ">
+	<div class="panel panel-default">
+<!-- MEMBERS OF THE FAMILY -->
+	<!-- Multiple values dito. Di ko alam kung paano iimplement sa mysql. -->
+	
+	<br>I hereby certify that all the information above are true and correct to the best of my knowledge and ability. <br><br>
+	
+	
+	<!-- Signature or thumb mark here; align right -->
+	Signature or Thumb mark of Senior Citizen<br><br>
+	
+	
+<!--data-toggle="modal" data-target="#myModal"-->
+	<button id="submit" class="btn btn-info" type="button">Submit</button>
+
+
+	<!--data-toggle="modal" data-target="#myModal" -->
+	
+	<!-- Naisip ko lang, pwedeng after clicking submit, dun nalang ilagay sa next page yung para sa OSCA ID chuchu para di na magtatanong yung gagamit para saan yun. Atsaka para naman lang kasi yun sa personnel -->
+
+	<!-- Popup before submitting to form -->
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+			<div class="modal-header">
+			<h4>Your Application is ready to be processed</h4>			
+			</div>
+			<div class="modal-body">
+				
+		      		<h3 align=center>Your OSCA ID number is:</h3>
+				<h1 align=center><?php include "private-files/generateid.php"?><h1>
+
+				<input type="hidden" name="idno" value="<?php echo $SC_IDNO?>">
+				
+				<button id="button" class="btn btn-info" type="submit">Submit</button>
+				<div id="results">
+				</div>
+			</div>
+		    </div>
+		  </div>
+		</div>
